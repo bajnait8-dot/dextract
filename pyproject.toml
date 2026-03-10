@@ -1,0 +1,25 @@
+[project]
+name = "dextractpy"
+version = "0.1.0"
+description = "Documment Extraction library for Python"
+authors = [
+    {name = "soho",email = "dev@hanso.ca"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "lxml (>=6.0.2,<7.0.0)",
+    "bs4 (>=0.0.2,<0.0.3)",
+    "tika (>=3.1.0,<4.0.0)",
+    "markdownify (>=1.2.2,<2.0.0)"
+]
+
+[project.urls]
+Repository = "https://github.com/swiftxo/dextract"
+
+[tool.poetry]
+packages = [{include = "dextract", from = "src"}]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
